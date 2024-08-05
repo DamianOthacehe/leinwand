@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-main:#1E3B82;
+    --clr-main-light:#4772a9;
+    --clr-orange:#F66F14;
+    --clr-orange-light:#F8B579;
+    --clr-dark-grey:#3C3C3B;
+    --clr-black:black;
+    --clr-white: white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu ul li{
+padding: 0 2rem;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--clr-dark-grey);
+}
+
+.banner{
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--clr-main-light);
+}
+
+.banner a{
+    color: var(--clr-white);
+    text-decoration: none;
+}
+
+.fotos{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    filter: brightness(0.5);
+}
+
+.fotos img{
+    width: 100%;
+}
